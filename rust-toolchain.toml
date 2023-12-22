@@ -1,0 +1,6 @@
+# The toolchain file https://rust-lang.github.io/rustup/overrides.html#the-toolchain-file
+[toolchain]
+channel = "stable"
+targets = [ "thumbv7em-none-eabihf" ]
+profile = "minimal"
+components = [ "rustfmt", "rust-src" ]
