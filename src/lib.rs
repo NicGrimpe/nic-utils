@@ -41,6 +41,27 @@ pub fn average(new_sample: u16, last_sample: u16, step: u8) -> Result<(f32, f32,
     return Result::Ok((first, second, third, fourth))
 }
 
+pub fn convert(floating : f32) -> u8 {
+    if floating == 0.0 {
+        return 0;
+    }
+    else if floating == 0.2 {
+        return 2;
+    }
+    else if floating == 0.4 {
+        return 4;
+    }
+    else if floating == 0.6 {
+        return 6;
+    }
+    else if floating == 0.8 {
+        return 8;
+    }
+    else {
+        return 1;
+    }
+}
+
 #[cfg(test)]
 mod tests {
     #[test]
