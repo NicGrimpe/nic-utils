@@ -26,7 +26,6 @@
             buildInputs = [ 
               rustToolchain
               pkgs.openocd
-              pkgs.lldb
               pkgs.bashInteractive
 	            pkgs.probe-rs
 	          ];
